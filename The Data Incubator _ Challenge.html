@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.thedataincubator.com/challenge.html -->
+<html lang="en" itemscope="" itemtype="http://schema.org/Organization" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    
+    <script async="" src="./The Data Incubator _ Challenge_files/analytics.js"></script><script type="text/javascript" src="./The Data Incubator _ Challenge_files/assets.js" defer=""></script>
+    
+
+		
+		
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+    <title>The Data Incubator  | Challenge </title>
+		<meta name="description" content="An 8 week fellowship training and placing advanced-degree data scientists and quants.">
+		<meta name="author" content="The Data Incubator">
+		<!-- For Google Plus sharing -->
+		<meta itemprop="name" content="The Data Incubator">
+		<meta itemprop="description" content="An 8 week fellowship training and placing advanced-degree data scientists and quants.">
+		<meta itemprop="image" content="http://www.thedataincubator.com/static/images/theme-pics/big-city-2.jpg">
+		<meta property="og:title" content="The Data Incubator">
+		<meta property="og:image" content="http://www.thedataincubator.com/static/images/theme-pics/big-city-2.jpg">
+		<meta property="og:description" content="An 8 week fellowship training and placing advanced-degree data scientists and quants.">
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<!-- CSS
+		================================================== -->
+		<!-- Bootstrap  -->
+    
+    <link type="text/css" id="colors" rel="stylesheet" href="./The Data Incubator _ Challenge_files/styles.css">
+    
+    <!-- web font  -->
+    <link href="./The Data Incubator _ Challenge_files/css" rel="stylesheet" type="text/css">
+		
+<link rel="stylesheet" type="text/css" href="./The Data Incubator _ Challenge_files/application.css">
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="shortcut icon" href="https://www.thedataincubator.com/static/images/chart-outline.ico">
+	<style type="text/css"></style><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">.MathJax_Preview .MJXc-math {color: inherit!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXc-script {font-size: .8em}
+.MJXc-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXc-bold {font-weight: bold}
+.MJXc-italic {font-style: italic}
+.MJXc-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-largeop {font-size: 150%}
+.MJXc-largeop.MJXc-int {vertical-align: -.2em}
+.MJXc-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXc-display {display: block; text-align: center; margin: 1em 0}
+.MJXc-math span {display: inline-block}
+.MJXc-box {display: block!important; text-align: center}
+.MJXc-box:after {content: " "}
+.MJXc-rule {display: block!important; margin-top: .1em}
+.MJXc-char {display: block!important}
+.MJXc-mo {margin: 0 .15em}
+.MJXc-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXc-denom {display: inline-table!important; width: 100%}
+.MJXc-denom > * {display: table-row!important}
+.MJXc-surd {vertical-align: top}
+.MJXc-surd > * {display: block!important}
+.MJXc-script-box > *  {display: table!important; height: 50%}
+.MJXc-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXc-script-box > *:last-child > * {vertical-align: bottom}
+.MJXc-script-box > * > * > * {display: block!important}
+.MJXc-mphantom {visibility: hidden}
+.MJXc-munderover {display: inline-table!important}
+.MJXc-over {display: inline-block!important; text-align: center}
+.MJXc-over > * {display: block!important}
+.MJXc-munderover > * {display: table-row!important}
+.MJXc-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXc-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXc-mtr {display: table-row!important}
+.MJXc-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXc-mtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-mlabeledtr {display: table-row!important}
+.MJXc-mlabeledtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mlabeledtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXc-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXc-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXc-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXc-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXc-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXc-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXc-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXc-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXc-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXc-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_CHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+	<body data-spy="scroll" data-target="#scrollTarget" data-offset="150" id="fullScreen" data-pinterest-extension-installed="cr1.39.1"><div id="MathJax_Message" style="display: none;"></div>
+		<!-- Preloader -->
+		<div id="preloader" style="display: none;">
+			<div id="status" style="display: none;">
+				<h1 class="noSubtitle"><i class="icon-chart-outline"></i>The Data Incubator</h1>
+			</div>
+		</div>
+		<!-- Preloader -->
+		<!-- Primary Page Layout
+		================================================== -->
+		<!-- globalWrapper -->
+		
+<div id="paralaxSlice5" data-stellar-background-ratio="0.5" style="background-image: url(https://www.thedataincubator.com/static/images/theme-pics/capitol-building-2.jpg);">
+	<div class="maskParent">
+		<div class="paralaxMask"></div>
+		<div class="paralaxText container">
+			<i class="icon-looped-square-outline iconBig"></i>
+			<blockquote class="bigTitle">Data Scientist: The Sexiest Job<br>of the 21st Century<br><small>HARVARD BUSINESS REVIEW</small></blockquote>
+		</div>
+	</div>
+</div>
+<section class="slice" id="apply">
+	<div class="hi">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1 class="noSubtitle">Challenge</h1>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+					<p>Please answer as many questions as you can.  We do not expect you to answer all the questions (they are mostly optional) but answering more questions correctly will help you.  <b>Please give all numerical answers to 10 digits of precision.  Partial credit will be given to answers that agree to less than 10 digits.</b>  You can resubmit your answers on this form as often as you would like.  Only the latest submission will be considered.  As a guide, this should take 3-4 hours but you are welcome to take more time if it would help.  (<sup>*</sup>) denotes a required field.
+					</p>
+
+					<div class="alert alert-info" role="alert"><p><strong>Want to get a head start on being a data scientist?</strong>  We want all semifinalists to get as much out of the challenge questions as possible.  So we've written <a href="http://blog.thedataincubator.com/2015/09/painlessly-deploying-data-apps-with-bokeh-flask-and-heroku/">three</a> <a href="http://blog.thedataincubator.com/2015/01/processing-data-like-a-professional-data-scientist/">blog</a> <a href="http://blog.thedataincubator.com/2015/01/a-cs-degree-for-data-science-part-i-efficient-numerical-computation/">posts</a> that might get you thinking about mathematics and computation differently.  They will also give you a head start on solving the challenge questions.  Consider following our <a href="http://blog.thedataincubator.com/">blog</a> and our <a href="https://twitter.com/intent/user?screen_name=thedatainc">twitter account</a> for more hints about becoming a data scientist!</p></div>
+
+					<div class="alert alert-info" role="alert"><p>If you are having browser troubles, we recommend using Chrome.  If you have trouble downloading any files, we suggest using command-line tools, rather than relying on a browser.</p></div>
+
+					<div class="alert alert-warning" role="alert"><p>We realize some questions are ambiguous.  Most real-world questions are.  This is a test of whether you can prioritize important effects and combine real-world knowledge with theory.</p></div>
+
+					<div class="alert alert-warning" role="alert"><p>Due to the volume of requests, we will only accept submissions via this form.</p></div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+          <form class="form-horizontal" role="form" id="challengeForm" action="https://www.thedataincubator.com/challengeSubmit">
+						<div class="row">
+							<div class="col-xs-12 mt30">
+                 <strong>Q1:</strong> 
+There is a lost tourist in Grandeville.  The streets in Grandeville run east to west and go from
+    <pre>..., S. 2nd St., S. 1st St., Broadway St., N. 1st St., N. 2nd St., ...</pre>
+The avenues run north to south and go from
+    <pre>..., E. 2nd Ave., E. 1st Ave., Broadway Ave., W. 1st Ave., W. 2nd Ave., ...</pre>
+These streets form a square block grid.  For each of the questions below, the tourist starts at the intersection of Broadway St. and Broadway Avenue and moves one block in each of the four cardinal directions with equal probability.
+
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="gridTerminal5" class="control-label left-align">
+      What is the probability that the tourist is at least 3 city blocks (as the crow flies) from Broadway and Broadway after 10 moves?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="gridTerminal5" name="gridTerminal5" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="gridTerminal5-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="gridTerminal10" class="control-label left-align">
+      What is the probability that the tourist is at least 10 city blocks (as the crow flies) from Broadway and Broadway after 60 moves?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="gridTerminal10" name="gridTerminal10" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="gridTerminal10-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="gridExit5" class="control-label left-align">
+      What is the probability that the tourist is ever at least 5 city blocks (as the crow flies) from Broadway and Broadway within 10 moves?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="gridExit5" name="gridExit5" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="gridExit5-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="gridExit10" class="control-label left-align">
+      What is the probability that the tourist is ever at least 10 city blocks (as the crow flies) from Broadway and Broadway within 60 moves?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="gridExit10" name="gridExit10" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="gridExit10-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="gridEastWest10" class="control-label left-align">
+      What is the probability that the tourist is ever east of East 1st Avenue but ends up west of West 1st Avenue in 10 moves?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="gridEastWest10" name="gridEastWest10" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="gridEastWest10-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="gridEastWest30" class="control-label left-align">
+      What is the probability that the tourist is ever east of East 1st Avenue but ends up west of West 1st Avenue in 30 moves?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="gridEastWest30" name="gridEastWest30" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="gridEastWest30-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="gridExtiTime10" class="control-label left-align">
+    What is the average number of moves until the first time the tourist is at least 10 city blocks (as the crow flies) from Broadway and Broadway.
+    </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="gridExtiTime10" name="gridExtiTime10" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="gridExtiTime10-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="gridExtiTime30" class="control-label left-align">
+    What is the average number of moves until the first time the tourist is at least 60 city blocks (as the crow flies) from Broadway and Broadway.
+    </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="gridExtiTime30" name="gridExtiTime30" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="gridExtiTime30-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 mt5">
+							  <div class="row form-group">
+  <div class="col-xs-12">
+    <label for="gridCode">Please provide the script used to generate this result (max 10000 characters).</label>
+    <textarea id="gridCode" name="gridCode" class="form-control allowtab" rows="6" maxlength="10000" style="margin-top: 0px; margin-bottom: 0px; height: 387px;"></textarea>
+  </div>
+</div>
+							  <p>In what language is the script written?<sup>*</sup></p>
+<div class="row">
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_c" name="gridLanguage" value="c">
+          C/C++
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_fortran" name="gridLanguage" value="fortran">
+          Fortran
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_idl" name="gridLanguage" value="idl">
+          IDL
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_java" name="gridLanguage" value="java">
+          Java
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_matlab" name="gridLanguage" value="matlab">
+          Matlab
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_perl" name="gridLanguage" value="perl">
+          Perl
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_python" name="gridLanguage" value="python">
+          Python
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_r" name="gridLanguage" value="r">
+          R
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_stata" name="gridLanguage" value="stata">
+          Stata
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_sql" name="gridLanguage" value="sql">
+          SQL
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_vba" name="gridLanguage" value="vba">
+          VBA
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="gridLanguage_other" name="gridLanguage" value="other">
+          Other
+      </label>
+    </div>
+  </div>
+	</div>
+</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12 mt30">
+                 <strong>Q2:</strong> 
+    For each of the questions below, use the NYC 311 call dataset.  You can download it <a href="https://s3.amazonaws.com/thedataincubator-challenge/nyc311calls.csv.gz">here</a>.  Note: the link can take a few minutes to start downloading.
+    
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="nyc311Agency" class="control-label left-align">
+      What fraction of complaints are associated with the 2nd most popular agency?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="nyc311Agency" name="nyc311Agency" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="nyc311Agency-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="nyc311Borough" class="control-label left-align">
+      What is the most 'surprising' complaint type when conditioned on a borough?
+      That is, what is the largest ratio of the conditional probability of a complaint type given a specified borough divided by the unconditioned probability of that complaint type?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="nyc311Borough" name="nyc311Borough" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="nyc311Borough-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="nyc311Latitude" class="control-label left-align">
+      What is the distance (in degrees) between the 90% and 10% percentiles of degrees latitude?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="nyc311Latitude" name="nyc311Latitude" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="nyc311Latitude-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="nyc311Area" class="control-label left-align">
+      Let's estimate the area that 311 supports.
+      Suppose calls are 2D normally distributed on the surface of the earth with mean and standard deviation given by those of the latitude and longitude.
+      How many square kilometers is the single-standard-deviation ellipse?
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="nyc311Area" name="nyc311Area" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="nyc311Area-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="nyc311Hour" class="control-label left-align">
+      What is the difference between the expected number of calls received during the most and least popular whole hours of the day?
+      (Remove points which do not seem to accurately reflect the actual time they were reported.)
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="nyc311Hour" name="nyc311Hour" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="nyc311Hour-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 col-sm-6">
+								<div class="row form-group">
+    <div class="col-xs-12">
+        <label for="nyc311Interval" class="control-label left-align">
+      What is the standard deviation in seconds of the time between consecutive calls?
+      (Remove points which do not seem to accurately reflect the actual time they were reported.)
+      </label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="nyc311Interval" name="nyc311Interval" maxlength="200" placeholder="0.123456789">
+        <div class="error-text" id="nyc311Interval-error-text">
+        </div>
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 mt5">
+							  <div class="row form-group">
+  <div class="col-xs-12">
+    <label for="nycCode">Please provide the script used to generate this result (max 10000 characters).</label>
+    <textarea id="nycCode" name="nycCode" class="form-control allowtab" rows="6" maxlength="10000" style="margin: 0px -12px 0px 0px; height: 455px; width: 763px;"></textarea>
+  </div>
+</div>
+							  <p>In what language is the script written?<sup>*</sup></p>
+<div class="row">
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_c" name="nycLanguage" value="c">
+          C/C++
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_fortran" name="nycLanguage" value="fortran">
+          Fortran
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_idl" name="nycLanguage" value="idl">
+          IDL
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_java" name="nycLanguage" value="java">
+          Java
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_matlab" name="nycLanguage" value="matlab">
+          Matlab
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_perl" name="nycLanguage" value="perl">
+          Perl
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_python" name="nycLanguage" value="python">
+          Python
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_r" name="nycLanguage" value="r">
+          R
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_stata" name="nycLanguage" value="stata">
+          Stata
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_sql" name="nycLanguage" value="sql">
+          SQL
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_vba" name="nycLanguage" value="vba">
+          VBA
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="nycLanguage_other" name="nycLanguage" value="other">
+          Other
+      </label>
+    </div>
+  </div>
+	</div>
+</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12 mt30">
+								<p><strong>Q3:</strong> <b>This question is required.</b></p>
+								
+    <p>Propose a project to do while at The Data Incubator.  We want to know about your ability to think at a high level.  Try to think of projects that users or businesses will care about (as opposed to academic projects that only researchers will care about).  The project does not have to be completely novel.  Here are some useful links about data sources on our blog (<a href="http://blog.thedataincubator.com/2014/10/data-sources-for-cool-data-science-projects-part-1/">Post 1</a> and <a href="http://blog.thedataincubator.com/2014/10/data-sources-for-cool-data-science-projects-part-2/">Post 2</a>).</p>
+    <p>Propose a project that uses a large, publically accessible dataset.  Motivate the problem you are tackling, discuss the data source(s) you are using, and explain the the analysis you are performing.  Do enough exploratory data analysis to convince one the project is viable and generate two interesting non-trivial plots supporting this.  Explain the plots and give url links to those plots.</p>
+    <ol>
+      <li>High-impact problems of general interest are more interesting than academic research problems.  If you solve the problem, will anyone care?  Identifying interesting problems is half the challenge when leaving the academy.
+      </li>
+      <li>While their potential is important, projects are assessed primarily based on the success of analysis performed.  We are looking for data scientists who are able to devliver value, not just promise it.
+      </li>
+      <li>Downloading a pre-formatted, pre-cleaned dataset intended for machine-learning (e.g. UCI or Kaggle datasets) is less impressive than pulling data from an API or scraping a webpage.  Most realworld data does not come neatly pre-packaged.
+      </li>
+      <li>All things being equal, using other challenge question datasets demonstrates a lack of creativity.  We're looking for creative, original thinkers.
+      </li>
+      <li>All things being equal, analysis of larger datasets is more impressive than analysis of smaller ones.
+      </li>
+      <li>All things being equal, people who demonstrate the ability to use <a href="https://git-scm.com/">git</a> and <a href="https://www.heroku.com/">Heroku for hosting</a> will be viewed more favorably.  To get started, try following <a href="https://try.github.io/">this git tutorial</a> or <a href="https://devcenter.heroku.com/start">these Heroku tutorials</a> in your favorite language.
+      </li>
+    </ol>
+  
+
+								<div class="row form-group">
+  <div class="col-xs-12">
+    <label for="projectProposal">Propose a project.<sup>*</sup></label>
+    <textarea id="projectProposal" name="projectProposal" class="form-control" rows="5" maxlength="10000" required=""></textarea>
+  </div>
+</div>
+								<div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="Make sure you make your links publicly accessible">
+    <div class="col-xs-12">
+        <label for="projectDataSourceLink" class="control-label left-align">Link to public description of data source.<sup>*</sup></label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="projectDataSourceLink" name="projectDataSourceLink" maxlength="200" placeholder="http://blog.thedataincubator.com/2014/10/data-sources-for-cool-data-science-projects-part-1/" required="">
+        <div class="error-text" id="projectDataSourceLink-error-text">
+        </div>
+    </div>
+</div>
+
+								<div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="Make sure you make your links publicly accessible">
+    <div class="col-xs-12">
+        <label for="projectPlot1" class="control-label left-align">Link to 1st plot.  You are highly encouraged to use a <a href="https://www.heroku.com/">Heroku apps domain</a> for your hosting.<sup>*</sup></label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="projectPlot1" name="projectPlot1" maxlength="200" placeholder="http://example.herokuapp.com/index.html" required="">
+        <div class="error-text" id="projectPlot1-error-text">
+        </div>
+    </div>
+</div>
+
+								<div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="Make sure you make your links publicly accessible">
+    <div class="col-xs-12">
+        <label for="projectPlot2" class="control-label left-align">Link to 2nd plot.  You are highly encouraged to use a <a href="https://www.heroku.com/">Heroku apps domain</a> for your hosting.<sup>*</sup></label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="projectPlot2" name="projectPlot2" maxlength="200" placeholder="http://example.herokuapp.com/index.html" required="">
+        <div class="error-text" id="projectPlot2-error-text">
+        </div>
+    </div>
+</div>
+
+								<div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="If you analyzed a subset of a larger dataset, report the size of the subset.">
+    <div class="col-xs-12">
+        <label for="projectDataSize" class="control-label left-align">How much data did you analyze (in MB)?<sup>*</sup></label>
+    </div>
+    <div class="col-xs-12">
+        <input type="text" class="form-control" id="projectDataSize" name="projectDataSize" maxlength="200" placeholder="1234" required="">
+        <div class="error-text" id="projectDataSize-error-text">
+        </div>
+    </div>
+</div>
+
+								<div>
+									<p><b>
+										How did you obtain your dataset?  (Please check all that apply.)
+									</b></p>
+								</div>
+								<div>
+                  <div class="checkbox">
+    <label>
+        <input type="checkbox" id="projectDataObtain" name="projectDataObtain" value="download">
+        I downloaded a dataset available online.
+    </label>
+</div>
+                  <div class="checkbox">
+    <label>
+        <input type="checkbox" id="projectDataObtain" name="projectDataObtain" value="api">
+        I used a provided API.
+    </label>
+</div>
+                  <div class="checkbox">
+    <label>
+        <input type="checkbox" id="projectDataObtain" name="projectDataObtain" value="scrape">
+        I scraped data from a webpage.
+    </label>
+</div>
+                  <div class="row">
+    <div class="col-xs-5 col-lg-4">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" name="projectDataObtain" value="other">
+                Other (please explain).
+            </label>
+        </div>
+    </div>
+    <div class="col-xs-7 col-lg-8">
+        <input type="text" class="form-control" id="projectDataObtainOtherExplanation" name="projectDataObtainOtherExplanation" maxlength="200">
+    </div>
+</div>
+                </div>
+
+							</div>
+							<div class="col-xs-12 mt15">
+								<p>We want to know your communication style.  Record a video of yourself giving a high-level proposal of your project to a non-technical person.  The video should be no longer than 1 minute and should be at a higher level than the previous explanation.</p>
+								<p>Record a video of yourself <a href="https://www.youtube.com/my_webcam">here</a> and upload it to Youtube (and not another video hosting service).  Be sure to make the video unlisted (but not private!) so people without the link cannot find it on Google (go <a href="https://www.youtube.com/my_videos">here</a>, click "Edit" on your video, <a href="https://www.thedataincubator.com/static/images/youtube-unlisted.png">select unlisted from the privacy dropdown menu</a>, and save your changes).  You can use either your webcam or a smartphone.</p>
+                <p>Once complete, please provide the <em>embed</em> URL of the video. To find this URL (<b>NOT</b> the entire iframe tag), on the video's normal watch page, you can click <a href="https://www.thedataincubator.com/static/images/embed.png">Share → Embed</a>, and take the link from inside the 'src' attribute of the tag. It looks something like this: https://www.youtube.com/embed/y9tX5whl2U</p>
+								<div class="row form-group" data-toggle="tooltip" data-placement="top" title="" data-original-title="Please provide a youtube link">
+    <div class="col-xs-12">
+      <label for="video">Please provide the EMBED URL to your video [e.g. https://www.youtube.com/watch?v=_dcQUuDH5FY ]<sup>*</sup></label>
+      <input type="url" class="form-control" id="video" name="video" placeholder="https://www.youtube.com/watch?v=_dcQUuDH5FY" required="" pattern="(?:https?:\/\/(?:www\.)?youtube.com/embed/.*)">
+    </div>
+    <div class="error-text" id="video-error-text">
+    </div>
+</div>
+							</div>
+							<div class="col-xs-12 mt15">
+								<div class="row form-group">
+  <div class="col-xs-12">
+    <label for="projectCode">Please provide the script used to generate this result (max 10000 characters).<sup>*</sup></label>
+    <textarea id="projectCode" name="projectCode" class="form-control allowtab" rows="6" maxlength="10000" required=""></textarea>
+  </div>
+</div>
+								<p>In what language is the script written?<sup>*</sup></p>
+<div class="row">
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_c" name="projectLanguage" value="c">
+          C/C++
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_fortran" name="projectLanguage" value="fortran">
+          Fortran
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_idl" name="projectLanguage" value="idl">
+          IDL
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_java" name="projectLanguage" value="java">
+          Java
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_matlab" name="projectLanguage" value="matlab">
+          Matlab
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_perl" name="projectLanguage" value="perl">
+          Perl
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_python" name="projectLanguage" value="python">
+          Python
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_r" name="projectLanguage" value="r">
+          R
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_stata" name="projectLanguage" value="stata">
+          Stata
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_sql" name="projectLanguage" value="sql">
+          SQL
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_vba" name="projectLanguage" value="vba">
+          VBA
+      </label>
+    </div>
+  </div>
+	</div>
+	<div class="col-xs-3">
+		<div class="row">
+    <div class="col-xs-12">
+      <label class="nobold">
+        <input type="radio" id="projectLanguage_other" name="projectLanguage" value="other">
+          Other
+      </label>
+    </div>
+  </div>
+	</div>
+</div>
+							</div>
+
+							<!-- Misc -->
+							<div class="col-xs-12 mt30">
+								<div class="row form-group">
+    <div class="col-xs-12">
+      <label for="time">For future challenge questions, how many hours did it take you to complete this challenge?  This will not be considered in your application (please just enter a number).<sup>*</sup></label>
+      <input type="number" class="form-control" id="time" name="time" required="" placeholder="9999">
+    </div>
+    <div class="error-text" id="time-error-text">
+    </div>
+</div>
+							</div>
+
+							<div class="col-xs-12 mt15">
+								<div class="checkbox">
+    <label>
+        <input type="checkbox" id="own" name="own" value="own" required="">
+        By submitting this form, you certify that your answers are the result of your own work and not copied from another individual or source. <sup>*</sup> 
+    </label>
+</div>
+								<input id="email" name="email" type="hidden">
+								<input id="code" name="code" type="hidden">
+								<input id="session" name="session" type="hidden" value="201506">
+								<div class="form-group text-center mt15">
+									<button id="submit-button" type="submit" class="btn btn-default">Submit</button>
+								</div>
+							</div>
+            </div>
+
+            <div id="formSubmitSuccess" class="formSubmitStatus row mt30" style="display: none;">
+              <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Success!</strong>  Thank you for submitting your challenge questions.  A confirmation email has been sent to your email with instructions on how to make sure you receive further communications from us.
+              </div>
+            </div>
+
+            <div id="formSubmitError" class="formSubmitStatus row mt30" style="display: none;">
+              <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                <strong>Something went wrong!</strong> See above for specific validation errors.
+              </div>
+            </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div id="paralaxSlice4" data-stellar-background-ratio="0.5" style="background-image: url(https://www.thedataincubator.com/static/images/theme-pics/big-city-3a.jpg);">
+	<div class="maskParent">
+		<div class="paralaxMask"></div>
+
+		<div class="paralaxText">
+			<blockquote class="bigTitle">With loads of data you will find relationships that aren’t real.<br>Big data isn’t about bits,<br>it’s about talent.<br><small>Forbes Magazine</small></blockquote>
+		</div>
+	</div>
+</div>
+
+		<!-- global wrapper -->
+		<!-- End Document
+		================================================== -->
+		<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+
+		
+<script type="text/x-mathjax-config;executed=true">
+	MathJax.Hub.Config({
+		tex2jax: {
+			inlineMath: [['$','$'], ['\\(','\\)']],
+			processEscapes: true
+		},
+	});
+</script>
+<script type="text/javascript" src="./The Data Incubator _ Challenge_files/MathJax.js" defer=""></script>
+		<script type="text/javascript" src="./The Data Incubator _ Challenge_files/bootstrap-datepicker.js" defer=""></script>
+<script type="text/javascript" src="./The Data Incubator _ Challenge_files/application.js" defer=""></script>
+<style>
+	input::-webkit-inner-spin-button {
+	    /* display: none; <- Crashes Chrome on hover */
+	    -webkit-appearance: none;
+	    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+	}
+  /* .invalid class prevents CSS from automatically applying */
+  .invalid input:invalid {
+      background: #BE4C54;
+  }
+
+  /* Mark valid inputs during .invalid state */
+  .invalid input:valid {
+      background: #17D654 ;
+  }
+</style>
+
+	
+	<!-- Google Analytics -->
+	<!-- End Google Analytics -->
+
+
+<!-- plugin css  -->
+</body></html>
